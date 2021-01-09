@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  background-color: #85a392;
+  font-family: "Press Start 2P", cursive;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.won {
+  color: white;
+  font-size: 72px;
+}
+
+.winner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  height: 100vh;
+  width: 100vw;
+}
+
+.menu {
+  position: absolute;
+  z-index: 0;
+  display: grid;
+  grid-template-areas:
+    "topbar topbar topbar"
+    "midbar midbar midbar"
+    "midbar2 midbar2 midbar2"
+    "lowbar lowbar lowbar";
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.game-name {
+  grid-area: topbar;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: yellowgreen;
+}
+
+.configure-hon {
+  grid-area: midbar;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: wheat;
+}
+
+#cellsHorizontal {
+  width: 100px;
+  color: hsl(39, 91%, 64%);
+  font-family: "Press Start 2P", cursive;
+}
+
+.configure-ver {
+  grid-area: midbar2;
+  color: wheat;
+}
+
+#cellsVertical {
+  width: 100px;
+  color: hsl(39, 91%, 64%);
+  font-family: "Press Start 2P", cursive;
+}
+
+.button {
+  grid-area: lowbar;
+}
+
+.start-button {
+  font-family: "Press Start 2P", cursive;
+  color: #011f3f;
+  height: 50px;
+  width: 100px;
+  border: 10px solid yellowgreen;
+  border-radius: 20%;
+}
+
+.restart-button {
+  font-family: "Press Start 2P", cursive;
+  background-color: rgb(24, 24, 29);
+  color: white;
+  height: 50px;
+  width: 125px;
+  border: 10px solid white;
+  border-radius: 20%;
+}
+
+.gameOnStart {
+  position: absolute;
+  z-index: 1;
+}
+
+.error {
+  color: red;
+  font-family: "Press Start 2P", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xxx-large;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 2;
+}
